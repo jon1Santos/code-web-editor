@@ -1,46 +1,26 @@
-# Getting Started with Create React App
+# code-web-editor
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![image](https://user-images.githubusercontent.com/42220755/169667610-f82c6135-61e2-4406-8478-0b95bb692db8.png)
 
-## Available Scripts
+## Save to a local file
 
-In the project directory, you can run:
+* This application was uploaded on npm
+* So you can save the state of the application to a local file, uploading the app to a local server
+<pre>npx code-web-editor serve</pre>
+* You can pass some arguments, like ``-p`` to set the server port or the ``filename`` that you want to save the application state
+<pre>npx code-web-editor serve -p 5000 mySavedState.js</pre>
 
-### `npm start`
+## Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+* Bundling-code: esbuild-wasm
+* CSS Templates: bulmaswatch
+* Code Editor: monaco-editor
+* State Manipulation Control: immer
+* Online Unpacker: https://unpkg.com/
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## About the App
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+You can use this app for test some features of libraries that you want to implement into your application or test some codes that you want to show someone,
+note, you can't use all libraries that you want, some libraries might not work here.
+I created this application with Stephen Grider into his course and i left some features off and implemented some updates to the libraries that were
+used here, like the ``monaco``, ``react-resizable`` for instance, and i made some implementations into the source code and on the ``css`` side
