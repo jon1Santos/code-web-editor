@@ -10,9 +10,14 @@ https://code-web-editor.vercel.app/
 
 * This application was uploaded on npm -> https://www.npmjs.com/package/code-web-editor
 * So you can save the state of the application to a local file, uploading the app to a local server
-<pre>npx code-web-editor serve</pre>
+```
+npx code-web-editor serve
+```
 * You can pass some arguments, like ``-p`` to set the server port or the ``filename`` that you want to save the application state
-<pre>npx code-web-editor serve -p 5000 mySavedState.js</pre>
+
+```
+npx code-web-editor serve -p 5000 mySavedState.js
+```
 
 ### To implement a new function before app be render
 
@@ -26,9 +31,13 @@ https://code-web-editor.vercel.app/
 * State Manipulation Control: immer
 * Online Unpacker: https://unpkg.com/
 
-## About the App
+<br/>
 
-You can use this app for test some features of libraries that you want to implement into your application or test some codes that you want to show someone,
-note, you can't use all libraries that you want, some libraries might not work here.
-I created this application with Stephen Grider into his course and i left some features off and implemented some updates to the libraries that were
-used here, like the ``monaco``, ``react-resizable`` for instance, and i made some implementations into the source code and on the ``css`` side
+<dl>
+  <dt><h2>About the App</h2></dt>
+  <dd>You can use this app for test some features of libraries that you want to implement into your application or test some codes that you want to show someone,
+  note, you can't use all libraries that you want, some libraries might not work here.
+  <br/>
+  I created this application with Stephen Grider into his course and i left some features off and implemented some updates to the libraries that were
+  used here, like the <code>monaco</code>, <code>react-resizable</code> for instance, and i made some implementations into the source code and on the            <code>css</code> side.</dd>
+</dl>
