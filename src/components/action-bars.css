@@ -1,0 +1,17 @@
+.action-bars{
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 0.25;
+    transition: opacity .3s;
+}
+
+.action-bars button {
+    background-color: #d16318;
+    color: white;
+    border-color: #d16318;
+}
+
+.action-bars:hover{
+    opacity: 1;
+}
