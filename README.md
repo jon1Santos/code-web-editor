@@ -4,11 +4,15 @@
 
 ## Save to a local file
 
-* This application was uploaded on npm
+* This application was uploaded on npm -> https://www.npmjs.com/package/code-web-editor
 * So you can save the state of the application to a local file, uploading the app to a local server
 <pre>npx code-web-editor serve</pre>
 * You can pass some arguments, like ``-p`` to set the server port or the ``filename`` that you want to save the application state
 <pre>npx code-web-editor serve -p 5000 mySavedState.js</pre>
+
+### To implement a new function before app be render
+
+* You can see the comments of the `use-cumulative-code` into the `hooks` folder
 
 ## Features
 
