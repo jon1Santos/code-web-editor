@@ -1,5 +1,9 @@
 # code-web-editor
 
+## Preview
+
+https://code-web-editor.vercel.app/
+
 ![image](https://user-images.githubusercontent.com/42220755/169667610-f82c6135-61e2-4406-8478-0b95bb692db8.png)
 
 ## Save to a local file
