@@ -1,5 +1,6 @@
 import { useTypedSelector } from './use-typed-selector';
 
+//YOU CAN WRITE A NEW FUNCTION, AND ATTACH IT INTO A NEW CONST LIKE BELOW
 const showFunc = 
 `
     import _React from 'react';
@@ -18,6 +19,8 @@ const showFunc =
         };
     };
 `
+
+//YOU WILL NEED TO CREATE A GENERIC FORM OF YOUR NEW FUNCTION LIKE BELOW
 const showFuncNoop = 'var show = () => {}';
 
 export const useCumulativeCode = (cellId: string) => {
@@ -31,16 +34,16 @@ export const useCumulativeCode = (cellId: string) => {
 
             for(const c of orderedCells){
                 if(c.id === cellId){
-                    cumulativeCode.push(showFunc);
+                    cumulativeCode.push(showFunc);  // YOU HAVE TO ADD A NEW LINE AND PUSH YOUR NEW FUNCTION INTO THE CUMULATIVE CODE
                     if(c.content === ''){
                         while(cumulativeCode.length !== 0)
                             cumulativeCode.pop();
                         cumulativeCode.push(c.content);
-                        cumulativeCode.push(showFunc);
+                        cumulativeCode.push(showFunc);  // YOU HAVE TO ADD A NEW LINE AND PUSH YOUR NEW FUNCTION INTO THE CUMULATIVE CODE RIGHT HERE TOO
                         break;
                     }
                 }else{
-                    cumulativeCode.push(showFuncNoop);
+                    cumulativeCode.push(showFuncNoop); // YOU HAVE TO ADD A NEW LINE AND PUSH YOU NEW GENERIC FUNCTION RIGHT HERE
                 }
                 cumulativeCode.push(c.content);
 
