@@ -16,7 +16,7 @@ export const unpkgPathPlugin = () => {
             'https://unpkg.com' + args.resolveDir + '/').href,
           };
         })
-        
+        //You write a new function, and attach it into a new const
       build.onResolve({ filter: /.*/ }, async (args: any) => {
         return{
           namespace: 'a',
